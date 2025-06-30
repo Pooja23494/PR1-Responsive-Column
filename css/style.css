@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+html,
+body {
+    font-family: "Nunito Sans", Arial, sans-serif;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    width: 100%;
+    padding: 15px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.mb-4 {
+    margin-bottom: 1rem;
+}
+
+.divider-100h {
+    height: 100px;
+}
+
+/* Our Properties Section Start */
+.our-properties {
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+.our-properties .our-properties-header h2 {
+    font-size: 13px;
+    display: block;
+    margin-top: 5rem;
+    margin-bottom: 5px;
+    color: #5ea51d;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.our-properties .our-properties-header h3 {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.4;
+    margin-bottom: 1.5rem;
+}
+
+.our-properties .our-properties-body {
+    box-shadow: 0px 5px 39px -14px rgba(0, 0, 0, 0.26);
+}
+
+.our-properties .our-properties-body .img {
+    display: block;
+    width: 100%;
+    height: 250px;
+    position: relative;
+    z-index: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.our-properties .our-properties-body .img.img-property::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .3;
+    background: #000000;
+    z-index: -1;
+    transition: all 0.3s ease;
+}
+
+.our-properties .our-properties-body:hover .img::after {
+    opacity: 0;
+}
+
+.our-properties .our-properties-body .img p.price {
+    position: absolute;
+    bottom: 0;
+    left: 25px;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.our-properties .our-properties-body .img p.price span.old-price {
+    color: rgba(255, 255, 255, 0.3);
+    position: relative;
+    margin-right: 8px;
+    background-color: #5ea51d;
+    padding: 3px 7px;
+}
+
+.our-properties .our-properties-body .img p.price span.old-price::after {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.2);
+    content: '';
+}
+
+.our-properties .our-properties-body .img p.price span.orig-price {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #5ea51d;
+    border-radius: 4px;
+    padding: 3px 7px;
+}
+
+.our-properties .our-properties-body .our-properties-content {
+    margin-top: 1.5rem;
+    padding: 0 15px;
+}
+
+.our-properties .our-properties-body .our-properties-content .img {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+}
+
+.our-properties .our-properties-body .our-properties-content h3 {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.6);
+    padding-left: 5px;
+}
+
+.our-properties .our-properties-body .our-properties-content .text {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.6);
+    padding-left: 25px;
+}
+
+.our-properties .our-properties-body .our-properties-content h2 {
+    display: flex;
+    align-items: start;
+    margin-bottom: 10px;
+}
+
+.our-properties .our-properties-body .our-properties-content h2 a {
+    font-size: 20px;
+    margin-bottom: 0;
+    line-height: 1.5;
+    color: #000000;
+    font-weight: 400;
+}
+
+.our-properties .our-properties-body .our-properties-content span {
+    font-size: 13px;
+    color: #999999;
+}
+
+.our-properties .our-properties-body .our-properties-content span i {
+    color: #5ea51d;
+    font-size: 13px;
+}
+
+.our-properties .our-properties-body .our-properties-content .sale {
+    background-color: #5ea51d;
+    color: #fff;
+    padding: 0 4px;
+    margin-left: 10px;
+}
+
+.our-properties .our-properties-body .our-properties-content .rent {
+    background-color: #fd5c64;
+    color: #fff;
+    padding: 0 4px;
+    margin-left: 10px;
+}
+
+.our-properties .our-properties-body .our-properties-content .property-list {
+    margin-top: 1rem;
+    padding-bottom: 10px;
+}
+
+.our-properties .our-properties-body .our-properties-content .property-list li {
+    font-size: 16px;
+    margin-right: 15px;
+    display: inline-block;
+}
+
+.our-properties .our-properties-body .our-properties-content .property-list li .flaticon-bed,
+.our-properties .our-properties-body .our-properties-content .property-list li .flaticon-bathtub,
+.our-properties .our-properties-body .our-properties-content .property-list li .flaticon-blueprint {
+    width: 15px;
+    margin-right: 5px;
+}
+
+/* Our Properties Section End */
