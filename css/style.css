@@ -154,6 +154,14 @@ ul li {
     padding: 0 15px;
 }
 
+.our-properties .our-properties-body .our-properties-content .item-team{
+    width: 100%;
+}
+
+.our-properties .our-properties-body .our-properties-content .item-team > div{
+    width: 50%;
+}
+
 .our-properties .our-properties-body .our-properties-content .img {
     width: 34px;
     height: 34px;
@@ -171,7 +179,8 @@ ul li {
     font-size: 14px;
     font-weight: 400;
     color: rgba(0, 0, 0, 0.6);
-    padding-left: 25px;
+    width: 50%;
+    text-align: right;
 }
 
 .our-properties .our-properties-body .our-properties-content h2 {
